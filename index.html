@@ -1,0 +1,1048 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>محمد هرمزی | دروازه‌بان فوتبال شاهین زاهدان - وب‌سایت رسمی</title>
+    
+    <!-- Google SEO & Meta Tags -->
+    <meta name="description" content="وب‌سایت رسمی و پرتفولیوی حرفه‌ای محمد هرمزی دروازه‌بان تیم شاهین زاهدان. مشاهده بیوگرافی، آمار بازی‌ها، کلین‌شیت‌ها، ویدیوها و گالری تصاویر سنگربان اول فوتبال." />
+    <meta name="keywords" content="محمد هرمزی, دروازه بان, شاهین زاهدان, فوتبال زاهدان, کلین شیت, سنگربان, دروازه بان شاهین زاهدان, محمد هرمزی دروازه بان, فوتبال ایران, لیگ دسته سه, خرید دروازه بان, ترانسفر بازیکن, بیوگرافی محمد هرمزی" />
+    <meta name="author" content="محمد هرمزی" />
+    <meta name="robots" content="index, follow" />
+    <meta name="language" content="fa" />
+    <meta name="owner" content="Mohammad Hormozi" />
+    <meta name="theme-color" content="#081c15" />
+    
+    <!-- Open Graph / Facebook / Telegram / WhatsApp -->
+    <meta property="og:type" content="profile" />
+    <meta property="og:title" content="محمد هرمزی | وب‌سایت رسمی دروازه‌بان فوتبال شاهین زاهدان" />
+    <meta property="og:description" content="پرتفولیوی تخصصی و بیوگرافی محمد هرمزی، امپراتور محوطه جریمه و دروازه‌بان اول شاهین زاهدان. بررسی آمار، کلین‌شیت‌ها و سوابق حرفه‌ای." />
+    <meta property="og:image" content="assets/imagesphoto1.jpg" />
+    <meta property="og:url" content="https://mohammadhormozi.com" />
+    <meta property="og:locale" content="fa_IR" />
+    <meta property="og:site_name" content="محمد هرمزی" />
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:title" content="محمد هرمزی | وب‌سایت رسمی دروازه‌بان فوتبال شاهین زاهدان" />
+    <meta property="twitter:description" content="بیوگرافی و آمار کلین‌شیت‌های محمد هرمزی سنگربان دژ نفوذناپذیر زاهدان." />
+    <meta property="twitter:image" content="assets/imagesphoto1.jpg" />
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://mohammadhormozi.com" />
+
+    <!-- Schema.org JSON-LD structured data for Google Rich Snippets -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "محمد هرمزی",
+      "alternateName": "Mohammad Hormozi",
+      "jobTitle": "دروازه‌بان حرفه‌ای فوتبال (Goalkeeper)",
+      "memberOf": {
+        "@type": "SportsTeam",
+        "name": "شاهین زاهدان"
+      },
+      "nationality": "Iranian",
+      "gender": "Male",
+      "height": "188 cm",
+      "weight": "82 kg",
+      "birthDate": "2002-08-01",
+      "image": "assets/images/photo1.jpg",
+      "url": "https://mohammadhormozi.com",
+      "sameAs": [
+        "https://www.instagram.com/ahmad_sohrabi1"
+      ]
+    }
+    </script>
+    
+    <!-- Google Fonts: Vazirmatn & Space Grotesk -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;700;900&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS Play CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Custom Tailwind Configuration -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Vazirmatn', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+              mono: ['Space Grotesk', 'ui-monospace', 'SFMono-Regular', 'monospace'],
+            },
+            colors: {
+              pitch: {
+                dark: '#081c15',
+                darker: '#040f0a',
+                card: '#1b4332',
+                green: '#2d6a4f',
+                emerald: '#40916c',
+                grass: '#1b4332',
+                line: 'rgba(251, 191, 36, 0.1)',
+                gold: '#fbbf24',
+              }
+            }
+          }
+        }
+      }
+    </script>
+    
+    <!-- Link to external style.css -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- GSAP & ScrollTrigger CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+  </head>
+  <body class="bg-pitch-dark text-gray-100 font-sans overflow-x-hidden selection:bg-pitch-gold selection:text-pitch-darker">
+    
+    <!-- Football Sideline & Rolling Ball Track -->
+    <div class="fixed right-2 md:right-8 top-0 bottom-0 w-[2px] bg-pitch-line z-40 pointer-events-none hidden xs:block">
+      <!-- Yard line & Match Minute Markers on the touchline for Geometric Balance -->
+      <div class="absolute top-[10%] right-[-14px] flex items-center gap-2">
+        <span class="text-[9px] font-mono font-bold text-pitch-gold/70">00'</span>
+        <div class="w-3 h-[1.5px] bg-pitch-gold/55"></div>
+      </div>
+      <div class="absolute top-[25%] right-[-14px] flex items-center gap-2">
+        <span class="text-[9px] font-mono font-bold text-pitch-gold/70">15'</span>
+        <div class="w-3 h-[1.5px] bg-pitch-gold/55"></div>
+      </div>
+      <div class="absolute top-[40%] right-[-14px] flex items-center gap-2">
+        <span class="text-[9px] font-mono font-bold text-pitch-gold/70">30'</span>
+        <div class="w-3 h-[1.5px] bg-pitch-gold/55"></div>
+      </div>
+      <div class="absolute top-[55%] right-[-14px] flex items-center gap-2">
+        <span class="text-[9px] font-mono font-bold text-pitch-gold/70">45'</span>
+        <div class="w-3 h-[1.5px] bg-pitch-gold/55"></div>
+      </div>
+      <div class="absolute top-[70%] right-[-14px] flex items-center gap-2">
+        <span class="text-[9px] font-mono font-bold text-pitch-gold/70">60'</span>
+        <div class="w-3 h-[1.5px] bg-pitch-gold/55"></div>
+      </div>
+      <div class="absolute top-[85%] right-[-14px] flex items-center gap-2">
+        <span class="text-[9px] font-mono font-bold text-pitch-gold/70">75'</span>
+        <div class="w-3 h-[1.5px] bg-pitch-gold/55"></div>
+      </div>
+      <div class="absolute top-[96%] right-[-14px] flex items-center gap-2">
+        <span class="text-[9px] font-mono font-bold text-pitch-gold">90'</span>
+        <div class="w-3 h-[2px] bg-pitch-gold"></div>
+      </div>
+    </div>
+    
+    <!-- Dynamic Rolling Football (Fixed/Sticky) - Captain Tsubasa Anime Style -->
+    <div id="scroll-football" class="fixed right-[-6px] md:right-[14px] top-[10%] w-9 h-9 md:w-14 md:h-14 z-50 pointer-events-none select-none filter drop-shadow-[0_6px_16px_rgba(0,0,0,0.85)]">
+      <svg viewBox="0 0 100 100" class="w-full h-full" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <!-- Anime Glow Effect -->
+          <filter id="soccer-glow" x="-20%" y="-20%" width="140%" height="140%">
+            <feGaussianBlur stdDeviation="1.5" result="blur" />
+            <feComposite in="SourceGraphic" in2="blur" operator="over" />
+          </filter>
+          <!-- Speed trail gradient -->
+          <linearGradient id="trail-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#fbbf24" stop-opacity="0.9" />
+            <stop offset="60%" stop-color="#ef4444" stop-opacity="0.5" />
+            <stop offset="100%" stop-color="#ef4444" stop-opacity="0" />
+          </linearGradient>
+        </defs>
+        
+        <!-- Speed Flare trails (Captain Tsubasa Fire Shot style) -->
+        <path d="M 12,22 Q 5,45 25,50 Q 5,60 15,82 Q 35,67 50,52 Q 25,37 12,22 Z" fill="url(#trail-grad)" opacity="0.7" transform="rotate(-45 50 50)" />
+        <path d="M 2,36 C 12,46 27,49 47,51 C 27,53 12,56 2,66 C 7,56 10,46 2,36 Z" fill="#fbbf24" opacity="0.5" />
+        
+        <!-- Main white sphere with dark contrast border -->
+        <circle cx="50" cy="50" r="43" fill="#ffffff" stroke="#111111" stroke-width="4" filter="url(#soccer-glow)" />
+        
+        <!-- Premium Solid Black Soccer ball panels (Pentagons) -->
+        <!-- Center Pentagon -->
+        <polygon points="50,33 65,44 59,62 41,62 35,44" fill="#111111" stroke="#111111" stroke-width="1" />
+        
+        <!-- Outer Pentagon (Top) -->
+        <polygon points="50,7 41,19 50,21 59,19" fill="#111111" stroke="#111111" stroke-width="1" />
+        
+        <!-- Outer Pentagon (Right) -->
+        <polygon points="91,33 77,31 69,44 80,50" fill="#111111" stroke="#111111" stroke-width="1" />
+        
+        <!-- Outer Pentagon (Bottom Right) -->
+        <polygon points="75,90 65,77 75,67 86,75" fill="#111111" stroke="#111111" stroke-width="1" />
+        
+        <!-- Outer Pentagon (Bottom Left) -->
+        <polygon points="25,90 35,77 25,67 14,75" fill="#111111" stroke="#111111" stroke-width="1" />
+        
+        <!-- Outer Pentagon (Left) -->
+        <polygon points="9,33 23,31 31,44 20,50" fill="#111111" stroke="#111111" stroke-width="1" />
+        
+        <!-- Connector Seams (Hexagon lines) -->
+        <line x1="50" y1="33" x2="50" y2="21" stroke="#111111" stroke-width="3" stroke-linecap="round" />
+        <line x1="65" y1="44" x2="69" y2="44" stroke="#111111" stroke-width="3" stroke-linecap="round" />
+        <line x1="59" y1="62" x2="65" y2="77" stroke="#111111" stroke-width="3" stroke-linecap="round" />
+        <line x1="41" y1="62" x2="35" y2="77" stroke="#111111" stroke-width="3" stroke-linecap="round" />
+        <line x1="35" y1="44" x2="31" y2="44" stroke="#111111" stroke-width="3" stroke-linecap="round" />
+        
+        <!-- Outer Boundary lines -->
+        <line x1="41" y1="19" x2="23" y2="31" stroke="#111111" stroke-width="3.5" />
+        <line x1="59" y1="19" x2="77" y2="31" stroke="#111111" stroke-width="3.5" />
+        <line x1="80" y1="50" x2="86" y2="75" stroke="#111111" stroke-width="3.5" />
+        <line x1="75" y1="67" x2="59" y2="62" stroke="#111111" stroke-width="3.5" />
+        <line x1="25" y1="67" x2="41" y2="62" stroke="#111111" stroke-width="3.5" />
+        <line x1="20" y1="50" x2="14" y2="75" stroke="#111111" stroke-width="3.5" />
+        
+        <!-- Tsubasa Speed & Rotation arcs -->
+        <path d="M 16,26 A 36,36 0 0,1 84,26" fill="none" stroke="#fbbf24" stroke-width="2" opacity="0.8" stroke-dasharray="6 4" />
+        <path d="M 26,84 A 36,36 0 0,1 74,84" fill="none" stroke="#fbbf24" stroke-width="1.5" opacity="0.65" stroke-dasharray="5 3" />
+      </svg>
+    </div>
+
+    <!-- Navigation Header -->
+    <header class="sticky top-0 w-full bg-pitch-darker/90 backdrop-blur-md z-30 border-b border-pitch-line">
+      <div class="max-w-6xl mx-auto px-4 md:px-8 py-4 flex items-center justify-between">
+        <!-- Brand logo -->
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-md bg-pitch-gold/10 border border-pitch-gold/30 flex items-center justify-center text-pitch-gold">
+            <i data-lucide="shield" class="w-5 h-5"></i>
+          </div>
+          <div>
+            <h1 class="font-black text-white text-lg leading-none tracking-tight">محمد هرمزی</h1>
+            <span class="text-xs text-pitch-gold font-mono uppercase tracking-wider">MOHAMMAD HORMOZI</span>
+          </div>
+        </div>
+        
+        <!-- Navigation menu -->
+        <nav class="hidden md:flex items-center gap-6 text-sm font-medium">
+          <a href="#hero" class="text-white hover:text-pitch-gold transition-colors">خانه</a>
+          <a href="#about" class="text-gray-400 hover:text-pitch-gold transition-colors">مشخصات فنی</a>
+          <a href="#current-club" class="text-gray-400 hover:text-pitch-gold transition-colors">باشگاه فعلی</a>
+          <a href="#youth" class="text-gray-400 hover:text-pitch-gold transition-colors">باشگاه‌های جوانی</a>
+          <a href="#timeline" class="text-gray-400 hover:text-pitch-gold transition-colors">تایم‌لاین سوابق</a>
+          <a href="#gallery" class="text-gray-400 hover:text-pitch-gold transition-colors">گالری تصاویر</a>
+          <a href="#contact" class="text-gray-400 hover:text-pitch-gold transition-colors">ارتباط</a>
+        </nav>
+
+        <!-- CTA/Contact Button -->
+        <a href="#contact" class="bg-pitch-gold hover:bg-amber-500 text-pitch-darker font-black px-4 py-2 rounded-md text-xs md:text-sm flex items-center gap-2 transition-all duration-300 transform hover:scale-105 shadow-[0_4px_14px_rgba(251,191,36,0.3)]">
+          <i data-lucide="phone" class="w-4 h-4"></i>
+          <span>دعوت به همکاری</span>
+        </a>
+      </div>
+    </header>
+
+    <!-- Main Content Grid -->
+    <main class="relative z-10">
+
+      <!-- SECTION 1: HERO / BANNER -->
+      <section id="hero" class="relative min-h-[90vh] flex items-center justify-center overflow-hidden border-b border-pitch-line pitch-grid">
+        <!-- Football Net Background Texture via SVG CSS -->
+        <div class="absolute inset-0 opacity-[0.025] pointer-events-none select-none net-bg"></div>
+        <div class="absolute inset-0 bg-gradient-to-t from-pitch-dark via-transparent to-pitch-dark/40 pointer-events-none"></div>
+        
+        <!-- Grid Marking background lines -->
+        <div class="absolute bottom-0 left-0 right-0 h-40 bg-[linear-gradient(rgba(251,191,36,0.015)_1px,transparent_1px)] bg-[size:100%_40px] pointer-events-none"></div>
+
+        <div class="max-w-6xl mx-auto px-4 md:px-8 py-16 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center relative z-10 w-full">
+          <!-- Text column -->
+          <div class="lg:col-span-7 flex flex-col items-start text-right space-y-6 lg:pr-4">
+            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-md bg-pitch-gold/10 border border-pitch-gold/30 text-pitch-gold text-xs font-bold uppercase tracking-wider">
+              <span class="w-2 h-2 rounded-full bg-pitch-gold animate-pulse"></span>
+              <span>دروازه‌بان شش‌دانگ شاغل در لیگ کشور</span>
+            </div>
+            
+            <h2 class="text-4xl md:text-6xl font-black text-white leading-tight md:leading-none">
+              سنگربان مطمئن، <br class="hidden md:inline" />
+              <span class="text-transparent bg-clip-text bg-gradient-to-l from-pitch-gold to-yellow-500 font-black">امپراتور محوطه جریمه</span>
+            </h2>
+            
+            <p class="text-gray-300 text-base md:text-lg max-w-xl leading-relaxed">
+              با ۲۰ سال سابقه بازی در سطوح عالی لیگ کشور، ملقب به دژ نفوذناپذیر زاهدان. تخصص در مهار ضربات پنالتی، خروج‌های بی‌نقص و رهبری مقتدرانه خط دفاعی.
+            </p>
+            
+            <!-- Key Highlight Stats -->
+            <div class="grid grid-cols-3 gap-6 py-4 w-full max-w-md border-y border-pitch-line">
+              <div>
+                <span class="block text-2xl md:text-3xl font-bold text-white font-mono leading-none">۱۸</span>
+                <span class="text-xs text-gray-500 mt-1 block">کلین‌شیت فصل قبل</span>
+              </div>
+              <div>
+                <span class="block text-2xl md:text-3xl font-bold text-pitch-gold font-mono leading-none">۸۲٪</span>
+                <span class="text-xs text-gray-500 mt-1 block">مهار موفق پنالتی</span>
+              </div>
+              <div>
+                <span class="block text-2xl md:text-3xl font-bold text-white font-mono leading-none">۱۸۷</span>
+                <span class="text-xs text-gray-500 mt-1 block">قد (سانتی‌متر)</span>
+              </div>
+            </div>
+
+            <!-- Action buttons -->
+            <div class="flex flex-wrap gap-4 pt-2">
+              <a href="#about" class="bg-pitch-gold hover:bg-amber-500 text-pitch-darker font-black px-6 py-3 rounded-md flex items-center gap-2 transition-all duration-300 shadow-[0_4px_14px_rgba(251,191,36,0.3)]">
+                <span>مشاهده بیوگرافی و آمار</span>
+                <i data-lucide="user" class="w-4 h-4"></i>
+              </a>
+              <a href="#gallery" class="bg-transparent hover:bg-white/5 border border-white/20 text-white font-semibold px-6 py-3 rounded-md flex items-center gap-2 transition-all duration-300">
+                <span>گالری عکس‌ها</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Hero Image Column (Photo 1) -->
+          <div class="lg:col-span-5 flex justify-center">
+            <div class="relative w-full max-w-[340px] md:max-w-[400px] aspect-[4/5] rounded-md overflow-hidden img-placeholder shadow-[0_15px_45px_rgba(0,0,0,0.85)] border-2 border-pitch-green/30 group">
+              <!-- Premium gold corner brackets for Geometric Balance -->
+              <div class="absolute -top-1.5 -right-1.5 w-4 h-4 border-t-2 border-r-2 border-pitch-gold z-20"></div>
+              <div class="absolute -bottom-1.5 -left-1.5 w-4 h-4 border-b-2 border-l-2 border-pitch-gold z-20"></div>
+              
+              <!-- Photo 1 - Hero Image -->
+              <img src="assets/images/photo1.jpg" alt="محمد هرمزی - هدر" class="w-full h-full object-cover relative z-10 transition-transform duration-700 group-hover:scale-105" loading="lazy" onerror="this.classList.add('hidden');" />
+              
+              <!-- Elegant fallback indicator -->
+              <div class="absolute inset-0 flex flex-col items-center justify-center p-6 text-center z-0">
+                <div class="w-16 h-16 rounded-md bg-pitch-gold/10 border border-pitch-gold/30 flex items-center justify-center text-pitch-gold mb-4">
+                  <i data-lucide="shield" class="w-8 h-8"></i>
+                </div>
+                <h4 class="font-bold text-lg text-white">محمد هرمزی</h4>
+                <!-- <p class="text-xs text-gray-400 mt-1">پیشنهاد: عکس تمام قد با لباس دروازه‌بانی</p> -->
+                <code class="text-[10px] font-mono text-pitch-gold bg-pitch-darker/60 px-2 py-1 rounded mt-4 border border-white/5">photo1.jpg</code>
+              </div>
+              <div class="absolute bottom-4 right-4 z-20 bg-pitch-darker/80 backdrop-blur-md border border-white/10 rounded px-3 py-1">
+                <span class="text-[10px] font-mono text-pitch-gold">محمد هرمزی</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Floating scroll indicator -->
+        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex flex-col items-center gap-2 text-xs text-gray-500 animate-bounce">
+          <span>به سمت پایین اسکرول کنید</span>
+          <i data-lucide="chevron-left" class="rotate-[-90deg] w-4 h-4"></i>
+        </div>
+      </section>
+
+
+      <!-- SECTION 2: ABOUT / CHARACTERISTICS -->
+      <section id="about" class="py-24 border-b border-pitch-line relative pitch-grid">
+        <div class="max-w-6xl mx-auto px-4 md:px-8">
+          
+          <div class="text-right mb-16">
+            <h3 class="text-xs font-bold text-pitch-gold uppercase tracking-widest font-mono mb-2">TECHNICAL PROFILE</h3>
+            <h2 class="text-3xl md:text-4xl font-black text-white">مشخصات فنی و فردی</h2>
+            <div class="flex items-center gap-1.5 mt-3 justify-start">
+              <div class="w-12 h-1.5 bg-pitch-gold"></div>
+              <div class="w-3 h-1.5 bg-pitch-green"></div>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            <!-- Portrait Image Column (Photo 2) -->
+            <div class="lg:col-span-5 flex justify-center order-2 lg:order-1">
+              <div class="relative w-full max-w-[320px] md:max-w-[360px] aspect-square rounded-md overflow-hidden img-placeholder shadow-[0_15px_40px_rgba(0,0,0,0.8)] border-2 border-pitch-green/30 group">
+                <!-- Premium gold corner brackets for Geometric Balance -->
+                <div class="absolute -top-1.5 -right-1.5 w-4 h-4 border-t-2 border-r-2 border-pitch-gold z-20"></div>
+                <div class="absolute -bottom-1.5 -left-1.5 w-4 h-4 border-b-2 border-l-2 border-pitch-gold z-20"></div>
+                
+                <!-- Photo 2 - Portrait Image -->
+                <img src="assets/images/photo2.jpg" alt="محمد هرمزی - درباره من" class="w-full h-full object-cover relative z-10 transition-transform duration-700 group-hover:scale-105" loading="lazy" onerror="this.classList.add('hidden');" />
+                
+                <!-- Elegant fallback indicator -->
+                <!-- <div class="absolute inset-0 flex flex-col items-center justify-center p-6 text-center z-0">
+                  <div class="w-16 h-16 rounded-md bg-pitch-gold/10 border border-pitch-gold/30 flex items-center justify-center text-pitch-gold mb-4">
+                    <i data-lucide="user" class="w-8 h-8"></i>
+                  </div>
+                  <h4 class="font-bold text-lg text-white">تصویر ۲ - پرتره درباره من</h4>
+                  <p class="text-xs text-gray-400 mt-1">پیشنهاد: پرتره ورزشی یا نیم‌رخ</p>
+                  <code class="text-[10px] font-mono text-pitch-gold bg-pitch-darker/60 px-2 py-1 rounded mt-4 border border-white/5">photo2.jpg</code>
+                </div>
+                <div class="absolute bottom-4 right-4 z-20 bg-pitch-darker/80 backdrop-blur-md border border-white/10 rounded px-3 py-1">
+                  <span class="text-[10px] font-mono text-pitch-gold">تصویر ۲ - پرتره</span>
+                </div> -->
+              </div>
+            </div>
+
+            <!-- Profile Info Table Column -->
+            <div class="lg:col-span-7 space-y-6 text-right order-1 lg:order-2">
+              <p class="text-gray-300 leading-relaxed text-base">
+                متولد زاهدان و عاشق فوتبال از کودکی. با برخورداری از فیزیک بدنی عالی، رفلکس‌های سریع برق‌آسا و قدرت رهبری بالا در داخل زمین. همواره تلاش می‌کنم با تمرکز ۱۰۰ درصدی، امنیت خاطر را به تیم و خط دفاعی هدیه دهم.
+              </p>
+              
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-4 pt-4">
+                <div class="bg-pitch-card border border-pitch-line rounded-md p-4 flex items-center gap-4 transition-all duration-300 hover:border-pitch-gold/30">
+                  <div class="w-10 h-10 rounded-md bg-pitch-gold/10 flex items-center justify-center text-pitch-gold">
+                    <i data-lucide="activity" class="w-5 h-5"></i>
+                  </div>
+                  <div>
+                    <span class="text-[10px] text-gray-400 block">پست تخصصی</span>
+                    <span class="text-sm font-bold text-white">دروازه‌بان (Goalkeeper)</span>
+                  </div>
+                </div>
+
+                <div class="bg-pitch-card border border-pitch-line rounded-md p-4 flex items-center gap-4 transition-all duration-300 hover:border-pitch-gold/30">
+                  <div class="w-10 h-10 rounded-md bg-pitch-gold/10 flex items-center justify-center text-pitch-gold">
+                    <i data-lucide="award" class="w-5 h-5"></i>
+                  </div>
+                  <div>
+                    <span class="text-[10px] text-gray-400 block">سن و تاریخ تولد</span>
+                    <span class="text-sm font-bold text-white">۳۸ سال (۱۳۶۷ فروردین)</span>
+                  </div>
+                </div>
+
+                <div class="bg-pitch-card border border-pitch-line rounded-md p-4 flex items-center gap-4 transition-all duration-300 hover:border-pitch-gold/30">
+                  <div class="w-10 h-10 rounded-md bg-pitch-gold/10 flex items-center justify-center text-pitch-gold">
+                    <i data-lucide="shield" class="w-5 h-5"></i>
+                  </div>
+                  <div>
+                    <span class="text-[10px] text-gray-400 block">قد</span>
+                    <span class="text-sm font-bold text-white">۱۸۷ سانتی‌متر</span>
+                  </div>
+                </div>
+
+                <div class="bg-pitch-card border border-pitch-line rounded-md p-4 flex items-center gap-4 transition-all duration-300 hover:border-pitch-gold/30">
+                  <div class="w-10 h-10 rounded-md bg-pitch-gold/10 flex items-center justify-center text-pitch-gold">
+                    <i data-lucide="trophy" class="w-5 h-5"></i>
+                  </div>
+                  <div>
+                    <span class="text-[10px] text-gray-400 block">دست تخصصی</span>
+                    <span class="text-sm font-bold text-white">راست‌دست (پاس با پای راست)</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Extra Skill bars -->
+              <div class="space-y-4 pt-4 border-t border-pitch-line">
+                <h4 class="font-bold text-sm text-white">مهارت‌های کلیدی درون دروازه</h4>
+                
+                <div class="space-y-1.5">
+                  <div class="flex justify-between text-xs font-mono">
+                    <span class="text-pitch-gold font-bold">۹۵٪</span>
+                    <span class="text-gray-400">عکس‌العمل و رفلکس (Reflexes)</span>
+                  </div>
+                  <div class="w-full h-2 bg-pitch-darker rounded-sm overflow-hidden border border-pitch-green/20">
+                    <div class="h-full bg-gradient-to-l from-pitch-gold to-amber-500 rounded-sm" style="width: 95%"></div>
+                  </div>
+                </div>
+
+                <div class="space-y-1.5">
+                  <div class="flex justify-between text-xs font-mono">
+                    <span class="text-pitch-gold font-bold">۹۰٪</span>
+                    <span class="text-gray-400">خروج‌های هوایی و مهار توپ (Air Control)</span>
+                  </div>
+                  <div class="w-full h-2 bg-pitch-darker rounded-sm overflow-hidden border border-pitch-green/20">
+                    <div class="h-full bg-gradient-to-l from-pitch-gold to-amber-500 rounded-sm" style="width: 90%"></div>
+                  </div>
+                </div>
+                <div class="space-y-1.5">
+                  <div class="flex justify-between text-xs font-mono">
+                    <span class="text-pitch-gold font-bold">۸۸٪</span>
+                    <span class="text-gray-400">بازی با پا و بازی‌سازی (Ball Distribution)</span>
+                  </div>
+                  <div class="w-full h-2 bg-pitch-darker rounded-sm overflow-hidden border border-pitch-green/20">
+                    <div class="h-full bg-gradient-to-l from-pitch-gold to-amber-500 rounded-sm" style="width: 88%"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+
+      <!-- SECTION 3: CURRENT CLUB DETAILS -->
+      <section id="current-club" class="py-24 border-b border-pitch-line bg-pitch-card/20 relative pitch-grid">
+        <div class="absolute inset-0 bg-gradient-to-b from-transparent via-pitch-gold/5 to-transparent pointer-events-none"></div>
+        
+        <div class="max-w-6xl mx-auto px-4 md:px-8 relative z-10">
+          
+          <div class="text-right mb-16">
+            <h3 class="text-xs font-bold text-pitch-gold uppercase tracking-widest font-mono mb-2">CURRENT CLUB STATUS</h3>
+            <h2 class="text-3xl md:text-4xl font-black text-white">باشگاه فعلی: شاهین زاهدان</h2>
+            <div class="flex items-center gap-1.5 mt-3 justify-start">
+              <div class="w-12 h-1.5 bg-pitch-gold"></div>
+              <div class="w-3 h-1.5 bg-pitch-green"></div>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            <!-- Text Content -->
+            <div class="lg:col-span-7 space-y-6 text-right">
+              <div class="inline-flex items-center gap-2 bg-pitch-gold/10 border border-pitch-gold/30 text-pitch-gold text-xs font-bold px-3 py-1.5 rounded-md">
+                <i data-lucide="award" class="w-3.5 h-3.5"></i>
+                <span>دروازه‌بان شماره یک شاهین زاهدان</span>
+              </div>
+              
+              <h3 class="text-2xl font-bold text-white">مرد شماره یک شاهین در رقابت‌های کشوری</h3>
+              
+              <p class="text-gray-300 leading-relaxed text-base">
+                از سال ۱۴۰۲ با پیوستن به تیم بزرگسالان شاهین زاهدان، به عنوان دروازه‌بان اصلی این باشگاه مردمی مشغول به فعالیت هستم. افتخار همراهی تیم در مسابقات لیگ دسته سه کشور و کسب عنوان بهترین خط دفاعی استان را در کارنامه دارم.
+              </p>
+
+              <!-- Club details list with crisp squares for Geometric Balance -->
+              <div class="grid grid-cols-2 gap-4 font-medium text-sm">
+                <div class="flex items-center gap-2.5 text-gray-300">
+                  <div class="w-1.5 h-1.5 bg-pitch-gold rotate-45 flex-shrink-0"></div>
+                  <span>لیگ شاغل: لیگ دسته ۳ بزرگسالان کشور</span>
+                </div>
+                <div class="flex items-center gap-2.5 text-gray-300">
+                  <div class="w-1.5 h-1.5 bg-pitch-gold rotate-45 flex-shrink-0"></div>
+                  <span>تعداد کلین‌شیت فصل جاری: ۹ بازی</span>
+                </div>
+                <div class="flex items-center gap-2.5 text-gray-300">
+                  <div class="w-1.5 h-1.5 bg-pitch-gold rotate-45 flex-shrink-0"></div>
+                  <span>شماره پیراهن: ۱ (سنگربان اول)</span>
+                </div>
+                <div class="flex items-center gap-2.5 text-gray-300">
+                  <div class="w-1.5 h-1.5 bg-pitch-gold rotate-45 flex-shrink-0"></div>
+                  <span>قرارداد: تا سال ۱۴۰۷</span>
+                </div>
+              </div>
+              
+              <!-- Quick quote card -->
+              <blockquote class="bg-pitch-dark/50 border-r-4 border-pitch-gold p-4 rounded-l-md text-gray-400 italic text-sm">
+                "بزرگترین افتخار من دفاع از چارچوب دروازه تیم شاهین زاهدان و خوشحال کردن هواداران پرشور و متعصب این تیم در استان است."
+              </blockquote>
+            </div>
+
+            <!-- Current Club Image (Photo 3) -->
+            <div class="lg:col-span-5 flex justify-center">
+              <div class="relative w-full max-w-[340px] md:max-w-[400px] aspect-[4/3] rounded-md overflow-hidden img-placeholder shadow-[0_15px_40px_rgba(0,0,0,0.85)] border-2 border-pitch-green/30 group">
+                <!-- Premium gold corner brackets for Geometric Balance -->
+                <div class="absolute -top-1.5 -right-1.5 w-4 h-4 border-t-2 border-r-2 border-pitch-gold z-20"></div>
+                <div class="absolute -bottom-1.5 -left-1.5 w-4 h-4 border-b-2 border-l-2 border-pitch-gold z-20"></div>
+                
+                <!-- Photo 3 - Current Club -->
+                <img src="assets/images/photo3.jpg" alt="محمد هرمزی - لباس تیم شاهین زاهدان" class="w-full h-full object-cover relative z-10 transition-transform duration-700 group-hover:scale-105" loading="lazy" onerror="this.classList.add('hidden');" />
+                
+                <!-- Elegant fallback indicator -->
+                <!-- <div class="absolute inset-0 flex flex-col items-center justify-center p-6 text-center z-0">
+                  <div class="w-14 h-14 rounded-md bg-pitch-gold/10 border border-pitch-gold/30 flex items-center justify-center text-pitch-gold mb-3">
+                    <i data-lucide="shield" class="w-7 h-7"></i>
+                  </div>
+                  <h4 class="font-bold text-base text-white">تصویر ۳ - عکس با لباس شاهین زاهدان</h4>
+                  <p class="text-[11px] text-gray-400 mt-1">پیشنهاد: عکس بازی یا پرتره با کیت شاهین</p>
+                  <code class="text-[9px] font-mono text-pitch-gold bg-pitch-darker/60 px-2 py-0.5 rounded mt-3 border border-white/5">photo3.jpg</code>
+                </div>
+                <div class="absolute bottom-4 right-4 z-20 bg-pitch-darker/80 backdrop-blur-md border border-white/10 rounded px-3 py-1">
+                  <span class="text-[10px] font-mono text-pitch-gold">تصویر ۳ - باشگاه فعلی</span>
+                </div> -->
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+
+      <!-- SECTION 4: YOUTH CLUBS (Youth & Academies) -->
+      <section id="youth" class="py-24 border-b border-pitch-line pitch-grid">
+        <div class="max-w-6xl mx-auto px-4 md:px-8">
+          
+          <div class="text-right mb-16">
+            <h3 class="text-xs font-bold text-pitch-gold uppercase tracking-widest font-mono mb-2">YOUTH CAREER</h3>
+            <h2 class="text-3xl md:text-4xl font-black text-white">باشگاه‌های دوران جوانی و آکادمی‌ها</h2>
+            <p class="text-gray-400 text-sm mt-2">خاستگاه و مسیر پرورش استعداد در رده‌های پایه کشور</p>
+            <div class="flex items-center gap-1.5 mt-3 justify-start">
+              <div class="w-12 h-1.5 bg-pitch-gold"></div>
+              <div class="w-3 h-1.5 bg-pitch-green"></div>
+            </div>
+          </div>
+           <div class="relative border-r-2 border-pitch-gold/30 mr-4 md:mr-8 space-y-16 py-4">
+            
+            <!-- Timeline Item 1 -->
+            <div class="relative pr-8 md:pr-12 group">
+              <!-- Square marker for Geometric Balance -->
+              <div class="absolute right-[-9px] top-1.5 w-4 h-4 bg-pitch-gold border-4 border-pitch-dark transition-all duration-300 group-hover:bg-white group-hover:scale-125 rotate-45"></div>
+              
+              <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+                <div class="lg:col-span-8 text-right space-y-2">
+                  <span class="inline-block bg-pitch-gold/10 text-pitch-gold font-mono font-bold text-xs px-3 py-1.5 rounded-md border border-pitch-gold/20">سال 2006 تا 2008</span>
+                  <h3 class="text-xl font-bold text-white group-hover:text-pitch-gold transition-colors">باشگاه فوتبال ساجد زاهدان</h3>
+                </div>
+              </div>
+            </div>
+
+            <!-- Timeline Item 2 -->
+            <div class="relative pr-8 md:pr-12 group">
+              <!-- Square marker for Geometric Balance -->
+              <div class="absolute right-[-9px] top-1.5 w-4 h-4 bg-pitch-gold border-4 border-pitch-dark transition-all duration-300 group-hover:bg-white group-hover:scale-125 rotate-45"></div>
+              
+              <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+                <div class="lg:col-span-8 text-right space-y-2">
+                  <span class="inline-block bg-pitch-gold/10 text-pitch-gold font-mono font-bold text-xs px-3 py-1.5 rounded-md border border-pitch-gold/20">سال 2008 تا 2012</span>
+                  <h3 class="text-xl font-bold text-white group-hover:text-pitch-gold transition-colors">باشگاه فوتبال قدس زاهدان</h3>
+                </div>
+              </div>
+            </div>
+
+            <!-- Timeline Item 3 (No Photo required here) -->
+            <div class="relative pr-8 md:pr-12 group">
+              <!-- Square marker for Geometric Balance -->
+              <div class="absolute right-[-9px] top-1.5 w-4 h-4 bg-pitch-gold border-4 border-pitch-dark transition-all duration-300 group-hover:bg-white group-hover:scale-125 rotate-45"></div>
+              
+              <div class="text-right space-y-2 max-w-3xl">
+                <span class="inline-block bg-pitch-gold/10 text-pitch-gold font-mono font-bold text-xs px-3 py-1.5 rounded-md border border-pitch-gold/30 animate-pulse">سال 2012 تا 2014</span>
+                <h3 class="text-xl font-bold text-white group-hover:text-pitch-gold transition-colors">باشگاه فوتبال شهرداری حیدریه قزوین</h3>
+              </div>
+            </div>
+
+            <!-- Timeline Item 4 (Current) -->
+            <div class="relative pr-8 md:pr-12 group">
+              <!-- Square marker for Geometric Balance -->
+              <div class="absolute right-[-9px] top-1.5 w-4 h-4 bg-pitch-gold border-4 border-pitch-dark transition-all duration-300 group-hover:bg-white group-hover:scale-125 rotate-45"></div>
+              
+              <div class="text-right space-y-2 max-w-3xl">
+                <span class="inline-block bg-pitch-gold/10 text-pitch-gold font-mono font-bold text-xs px-3 py-1.5 rounded-md border border-pitch-gold/30 animate-pulse">سال 2014 تا 2015</span>
+                <h3 class="text-xl font-bold text-white group-hover:text-pitch-gold transition-colors">باشگاه فوتبال کاسپین نوین</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+            <!-- SECTION 5: PROFESSIONAL TIMELINE (Vertical Timeline) -->
+      <section id="timeline" class="py-24 border-b border-pitch-line bg-pitch-card/10 relative pitch-grid">
+        <div class="max-w-6xl mx-auto px-4 md:px-8">
+          
+          <div class="text-right mb-16">
+            <h3 class="text-xs font-bold text-pitch-gold uppercase tracking-widest font-mono mb-2">CAREER TIMELINE</h3>
+            <h2 class="text-3xl md:text-4xl font-black text-white">سوابق حرفه‌ای و نقاط عطف</h2>
+            <div class="flex items-center gap-1.5 mt-3 justify-start">
+              <div class="w-12 h-1.5 bg-pitch-gold"></div>
+              <div class="w-3 h-1.5 bg-pitch-green"></div>
+            </div>
+          </div>
+
+          <!-- Vertical Timeline container with golden border -->
+          <div class="relative border-r-2 border-pitch-gold/30 mr-4 md:mr-8 space-y-16 py-4">
+            
+            <!-- Timeline Item 1 -->
+            <div class="relative pr-8 md:pr-12 group">
+              <!-- Square marker for Geometric Balance -->
+              <div class="absolute right-[-9px] top-1.5 w-4 h-4 bg-pitch-gold border-4 border-pitch-dark transition-all duration-300 group-hover:bg-white group-hover:scale-125 rotate-45"></div>
+              
+              <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+                <div class="lg:col-span-8 text-right space-y-2">
+                  <span class="inline-block bg-pitch-gold/10 text-pitch-gold font-mono font-bold text-xs px-3 py-1.5 rounded-md border border-pitch-gold/20">سال 2015 تا 2021</span>
+                  <h3 class="text-xl font-bold text-white group-hover:text-pitch-gold transition-colors">باشگاه فوتبال منتخب استان سیستان و بلوچستان</h3>
+                </div>
+                <!-- Photo 6 associated with Timeline Item 1 -->
+                <div class="lg:col-span-4 flex justify-start">
+                  <div class="relative w-full max-w-[240px] aspect-[4/3] rounded-md overflow-hidden img-placeholder border-2 border-pitch-green/20">
+                    <!-- Premium gold corner brackets for Geometric Balance -->
+                    <div class="absolute -top-1.5 -right-1.5 w-4 h-4 border-t-2 border-r-2 border-pitch-gold z-20"></div>
+                    <div class="absolute -bottom-1.5 -left-1.5 w-4 h-4 border-b-2 border-l-2 border-pitch-gold z-20"></div>
+                    
+                    <img src="assets/images/photo4.jpg" alt="اولین بازی مهم" class="w-full h-full object-cover relative z-10" loading="lazy" onerror="this.classList.add('hidden');" />
+                    <div class="absolute inset-0 flex flex-col items-center justify-center p-3 text-center z-0">
+                      <span class="text-xs font-bold text-white">تصویر ۶ - سابقه ۱</span>
+                      <code class="text-[9px] font-mono text-pitch-gold mt-1">photo4.jpg</code>
+                    </div>
+                    <div class="absolute bottom-1 right-1 z-20 bg-pitch-darker/80 backdrop-blur-md rounded px-1.5 py-0.5 text-[8px] font-mono text-pitch-gold">تصویر ۶</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Timeline Item 2 -->
+            <div class="relative pr-8 md:pr-12 group">
+              <!-- Square marker for Geometric Balance -->
+              <div class="absolute right-[-9px] top-1.5 w-4 h-4 bg-pitch-gold border-4 border-pitch-dark transition-all duration-300 group-hover:bg-white group-hover:scale-125 rotate-45"></div>
+              
+              <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+                <div class="lg:col-span-8 text-right space-y-2">
+                  <span class="inline-block bg-pitch-gold/10 text-pitch-gold font-mono font-bold text-xs px-3 py-1.5 rounded-md border border-pitch-gold/20">سال 2021 تا 2023</span>
+                  <h3 class="text-xl font-bold text-white group-hover:text-pitch-gold transition-colors">باشگاه فوتبال کاسپین نوین</h3>
+                </div>
+                <!-- Photo 7 associated with Timeline Item 2 -->
+                <div class="lg:col-span-4 flex justify-start">
+                  <div class="relative w-full max-w-[240px] aspect-[4/3] rounded-md overflow-hidden img-placeholder border-2 border-pitch-green/20">
+                    <!-- Premium gold corner brackets for Geometric Balance -->
+                    <div class="absolute -top-1.5 -right-1.5 w-4 h-4 border-t-2 border-r-2 border-pitch-gold z-20"></div>
+                    <div class="absolute -bottom-1.5 -left-1.5 w-4 h-4 border-b-2 border-l-2 border-pitch-gold z-20"></div>
+                    
+                    <img src="assets/images/photo5.jpg" alt="افتخار فردی" class="w-full h-full object-cover relative z-10" loading="lazy" onerror="this.classList.add('hidden');" />
+                    <div class="absolute inset-0 flex flex-col items-center justify-center p-3 text-center z-0">
+                      <span class="text-xs font-bold text-white">تصویر ۷ - سابقه ۲</span>
+                      <code class="text-[9px] font-mono text-pitch-gold mt-1">photo7.jpg</code>
+                    </div>
+                    <div class="absolute bottom-1 right-1 z-20 bg-pitch-darker/80 backdrop-blur-md rounded px-1.5 py-0.5 text-[8px] font-mono text-pitch-gold">تصویر ۷</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Timeline Item 3 (No Photo required here) -->
+            <div class="relative pr-8 md:pr-12 group">
+              <!-- Square marker for Geometric Balance -->
+              <div class="absolute right-[-9px] top-1.5 w-4 h-4 bg-pitch-gold border-4 border-pitch-dark transition-all duration-300 group-hover:bg-white group-hover:scale-125 rotate-45"></div>
+              
+              <div class="text-right space-y-2 max-w-3xl">
+                <span class="inline-block bg-pitch-gold/10 text-pitch-gold font-mono font-bold text-xs px-3 py-1.5 rounded-md border border-pitch-gold/20">سال 2023 تا 2024</span>
+                <h3 class="text-xl font-bold text-white group-hover:text-pitch-gold transition-colors">باشگاه فوتبال فولاد گستر تهران</h3>
+              </div>
+            </div>
+
+            <!-- Timeline Item 4 (Current) -->
+            <div class="relative pr-8 md:pr-12 group">
+              <!-- Square marker for Geometric Balance -->
+              <div class="absolute right-[-9px] top-1.5 w-4 h-4 bg-pitch-gold border-4 border-pitch-dark transition-all duration-300 group-hover:bg-white group-hover:scale-125 rotate-45"></div>
+              
+              <div class="text-right space-y-2 max-w-3xl">
+                <span class="inline-block bg-pitch-gold/10 text-pitch-gold font-mono font-bold text-xs px-3 py-1.5 rounded-md border border-pitch-gold/30 animate-pulse">سال 2024 تا 2025</span>
+                <h3 class="text-xl font-bold text-white group-hover:text-pitch-gold transition-colors">باشگاه فوتبال تهران یاسا</h3>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+       <!-- SECTION 6: PHOTO GALLERY (8 Photos with Vanilla JS Lightbox) -->
+      <section id="gallery" class="py-24 border-b border-pitch-line pitch-grid">
+        <div class="max-w-6xl mx-auto px-4 md:px-8">
+          
+          <div class="text-right mb-16">
+            <h3 class="text-xs font-bold text-pitch-gold uppercase tracking-widest font-mono mb-2">PHOTO GALLERY</h3>
+            <h2 class="text-3xl md:text-4xl font-black text-white">گالری تصاویر ورزشی</h2>
+            <p class="text-gray-400 text-sm mt-2">منتخب تصاویر ماندگار درون دروازه, جلسات تمرینی و لحظات برگزیده ورزشی (با کلیک روی عکس بزرگنمایی فعال می‌شود)</p>
+            <div class="flex items-center gap-1.5 mt-3 justify-start">
+              <div class="w-12 h-1.5 bg-pitch-gold"></div>
+              <div class="w-3 h-1.5 bg-pitch-green"></div>
+            </div>
+          </div>
+
+          <!-- 8-Photo Masonry Grid -->
+          <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6" id="gallery-grid">
+            
+            <!-- Gallery Photo 1 (photo8.jpg) -->
+            <div class="relative group cursor-pointer aspect-square rounded-md overflow-hidden img-placeholder border-2 border-pitch-green/20 shadow-md hover:shadow-pitch-gold/15 hover:border-pitch-gold/40 transition-all duration-300" onclick="openLightbox(0)">
+              <!-- Premium gold corner brackets for Geometric Balance -->
+              <div class="absolute -top-1.5 -right-1.5 w-3 h-3 border-t border-r border-pitch-gold z-20"></div>
+              <div class="absolute -bottom-1.5 -left-1.5 w-3 h-3 border-b border-l border-pitch-gold z-20"></div>
+              
+              <img src="assets/images/photo6.jpg" alt="گالری - تمرینات تیمی" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 relative z-10" loading="lazy" onerror="this.classList.add('hidden');" />
+              <div class="absolute inset-0 flex flex-col items-center justify-center p-3 text-center z-0">
+                <span class="text-xs font-bold text-white">تصویر ۸ (گالری ۱)</span>
+                <code class="text-[9px] font-mono text-pitch-gold mt-1">photo8.jpg</code>
+              </div>
+              <!-- Hover Overlay Info -->
+              <div class="absolute inset-0 bg-pitch-darker/85 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4 z-20 text-right">
+                <span class="text-pitch-gold text-xs font-bold font-mono">PHOTO 08</span>
+              </div>
+            </div>
+
+            <!-- Gallery Photo 2 (photo9.jpg) -->
+            <div class="relative group cursor-pointer aspect-square rounded-md overflow-hidden img-placeholder border-2 border-pitch-green/20 shadow-md hover:shadow-pitch-gold/15 hover:border-pitch-gold/40 transition-all duration-300" onclick="openLightbox(1)">
+              <!-- Premium gold corner brackets for Geometric Balance -->
+              <div class="absolute -top-1.5 -right-1.5 w-3 h-3 border-t border-r border-pitch-gold z-20"></div>
+              <div class="absolute -bottom-1.5 -left-1.5 w-3 h-3 border-b border-l border-pitch-gold z-20"></div>
+              
+              <img src="assets/images/photo7.jpg" alt="گالری - حین مسابقه" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 relative z-10" loading="lazy" onerror="this.classList.add('hidden');" />
+              <div class="absolute inset-0 flex flex-col items-center justify-center p-3 text-center z-0">
+                <span class="text-xs font-bold text-white">تصویر ۹ (گالری ۲)</span>
+                <code class="text-[9px] font-mono text-pitch-gold mt-1">photo9.jpg</code>
+              </div>
+              <div class="absolute inset-0 bg-pitch-darker/85 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4 z-20 text-right">
+                <span class="text-pitch-gold text-xs font-bold font-mono">PHOTO 09</span>
+              </div>
+            </div>
+
+            <!-- Gallery Photo 3 (photo10.jpg) -->
+            <div class="relative group cursor-pointer aspect-square rounded-md overflow-hidden img-placeholder border-2 border-pitch-green/20 shadow-md hover:shadow-pitch-gold/15 hover:border-pitch-gold/40 transition-all duration-300" onclick="openLightbox(2)">
+              <!-- Premium gold corner brackets for Geometric Balance -->
+              <div class="absolute -top-1.5 -right-1.5 w-3 h-3 border-t border-r border-pitch-gold z-20"></div>
+              <div class="absolute -bottom-1.5 -left-1.5 w-3 h-3 border-b border-l border-pitch-gold z-20"></div>
+              
+              <img src="assets/images/photo8.jpg" alt="گالری - مهار توپ" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 relative z-10" loading="lazy" onerror="this.classList.add('hidden');" />
+              <div class="absolute inset-0 flex flex-col items-center justify-center p-3 text-center z-0">
+                <span class="text-xs font-bold text-white">تصویر ۱۰ (گالری ۳)</span>
+                <code class="text-[9px] font-mono text-pitch-gold mt-1">photo10.jpg</code>
+              </div>
+              <div class="absolute inset-0 bg-pitch-darker/85 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4 z-20 text-right">
+                <span class="text-pitch-gold text-xs font-bold font-mono">PHOTO 10</span>
+              </div>
+            </div>
+
+            <!-- Gallery Photo 4 (photo11.jpg) -->
+            <div class="relative group cursor-pointer aspect-square rounded-md overflow-hidden img-placeholder border-2 border-pitch-green/20 shadow-md hover:shadow-pitch-gold/15 hover:border-pitch-gold/40 transition-all duration-300" onclick="openLightbox(3)">
+              <!-- Premium gold corner brackets for Geometric Balance -->
+              <div class="absolute -top-1.5 -right-1.5 w-3 h-3 border-t border-r border-pitch-gold z-20"></div>
+              <div class="absolute -bottom-1.5 -left-1.5 w-3 h-3 border-b border-l border-pitch-gold z-20"></div>
+              
+              <img src="assets/images/photo9.jpg" alt="گالری - شادی بعد مهار" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 relative z-10" loading="lazy" onerror="this.classList.add('hidden');" />
+              <div class="absolute inset-0 flex flex-col items-center justify-center p-3 text-center z-0">
+                <span class="text-xs font-bold text-white">تصویر ۱۱ (گالری ۴)</span>
+                <code class="text-[9px] font-mono text-pitch-gold mt-1">photo11.jpg</code>
+              </div>
+              <div class="absolute inset-0 bg-pitch-darker/85 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4 z-20 text-right">
+                <span class="text-pitch-gold text-xs font-bold font-mono">PHOTO 11</span>
+              </div>
+            </div>
+
+            <!-- Gallery Photo 5 (photo12.jpg) -->
+            <div class="relative group cursor-pointer aspect-square rounded-md overflow-hidden img-placeholder border-2 border-pitch-green/20 shadow-md hover:shadow-pitch-gold/15 hover:border-pitch-gold/40 transition-all duration-300" onclick="openLightbox(4)">
+              <!-- Premium gold corner brackets for Geometric Balance -->
+              <div class="absolute -top-1.5 -right-1.5 w-3 h-3 border-t border-r border-pitch-gold z-20"></div>
+              <div class="absolute -bottom-1.5 -left-1.5 w-3 h-3 border-b border-l border-pitch-gold z-20"></div>
+              
+              <img src="assets/images/photo10.jpg" alt="گالری - تمرینات بدنسازی" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 relative z-10" loading="lazy" onerror="this.classList.add('hidden');" />
+              <div class="absolute inset-0 flex flex-col items-center justify-center p-3 text-center z-0">
+                <span class="text-xs font-bold text-white">تصویر ۱۲ (گالری ۵)</span>
+                <code class="text-[9px] font-mono text-pitch-gold mt-1">photo12.jpg</code>
+              </div>
+              <div class="absolute inset-0 bg-pitch-darker/85 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4 z-20 text-right">
+                <span class="text-pitch-gold text-xs font-bold font-mono">PHOTO 12</span>
+              </div>
+            </div>
+
+            <!-- Gallery Photo 6 (photo13.jpg) -->
+            <div class="relative group cursor-pointer aspect-square rounded-md overflow-hidden img-placeholder border-2 border-pitch-green/20 shadow-md hover:shadow-pitch-gold/15 hover:border-pitch-gold/40 transition-all duration-300" onclick="openLightbox(5)">
+              <!-- Premium gold corner brackets for Geometric Balance -->
+              <div class="absolute -top-1.5 -right-1.5 w-3 h-3 border-t border-r border-pitch-gold z-20"></div>
+              <div class="absolute -bottom-1.5 -left-1.5 w-3 h-3 border-b border-l border-pitch-gold z-20"></div>
+              
+              <img src="assets/images/photo11.jpg" alt="گالری - عکس تیمی" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 relative z-10" loading="lazy" onerror="this.classList.add('hidden');" />
+              <div class="absolute inset-0 flex flex-col items-center justify-center p-3 text-center z-0">
+                <span class="text-xs font-bold text-white">تصویر ۱۳ (گالری ۶)</span>
+                <code class="text-[9px] font-mono text-pitch-gold mt-1">photo13.jpg</code>
+              </div>
+              <div class="absolute inset-0 bg-pitch-darker/85 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4 z-20 text-right">
+                <span class="text-pitch-gold text-xs font-bold font-mono">PHOTO 13</span>
+              </div>
+            </div>
+
+            <!-- Gallery Photo 7 (photo14.jpg) -->
+            <div class="relative group cursor-pointer aspect-square rounded-md overflow-hidden img-placeholder border-2 border-pitch-green/20 shadow-md hover:shadow-pitch-gold/15 hover:border-pitch-gold/40 transition-all duration-300" onclick="openLightbox(6)">
+              <!-- Premium gold corner brackets for Geometric Balance -->
+              <div class="absolute -top-1.5 -right-1.5 w-3 h-3 border-t border-r border-pitch-gold z-20"></div>
+              <div class="absolute -bottom-1.5 -left-1.5 w-3 h-3 border-b border-l border-pitch-gold z-20"></div>
+              
+              <img src="assets/images/photo12.jpg" alt="گالری - صعود به لیگ برتر" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 relative z-10" loading="lazy" onerror="this.classList.add('hidden');" />
+              <div class="absolute inset-0 flex flex-col items-center justify-center p-3 text-center z-0">
+                <span class="text-xs font-bold text-white">تصویر ۱۴ (گالری ۷)</span>
+                <code class="text-[9px] font-mono text-pitch-gold mt-1">photo14.jpg</code>
+              </div>
+              <div class="absolute inset-0 bg-pitch-darker/85 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4 z-20 text-right">
+                <span class="text-pitch-gold text-xs font-bold font-mono">PHOTO 14</span>
+              </div>
+            </div>
+
+            <!-- Gallery Photo 8 (photo15.jpg) -->
+            <div class="relative group cursor-pointer aspect-square rounded-md overflow-hidden img-placeholder border-2 border-pitch-green/20 shadow-md hover:shadow-pitch-gold/15 hover:border-pitch-gold/40 transition-all duration-300" onclick="openLightbox(7)">
+              <!-- Premium gold corner brackets for Geometric Balance -->
+              <div class="absolute -top-1.5 -right-1.5 w-3 h-3 border-t border-r border-pitch-gold z-20"></div>
+              <div class="absolute -bottom-1.5 -left-1.5 w-3 h-3 border-b border-l border-pitch-gold z-20"></div>
+              
+              <img src="assets/images/photo13.jpg" alt="گالری - پرتره آتلیه‌ای" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 relative z-10" loading="lazy" onerror="this.classList.add('hidden');" />
+              <div class="absolute inset-0 flex flex-col items-center justify-center p-3 text-center z-0">
+                <span class="text-xs font-bold text-white">تصویر ۱۵ (گالری ۸)</span>
+                <code class="text-[9px] font-mono text-pitch-gold mt-1">photo15.jpg</code>
+              </div>
+              <div class="absolute inset-0 bg-pitch-darker/85 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4 z-20 text-right">
+                <span class="text-pitch-gold text-xs font-bold font-mono">PHOTO 15</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+      <!-- SECTION 7: CONTACT / CALL TO ACTION -->
+      <section id="contact" class="py-24 border-b border-pitch-line bg-pitch-darker relative overflow-hidden pitch-grid">
+        <div class="absolute inset-0 opacity-[0.015] pointer-events-none select-none net-bg"></div>
+        
+        <div class="max-w-4xl mx-auto px-4 md:px-8 relative z-10 text-center">
+          
+          <h3 class="text-xs font-bold text-pitch-gold uppercase tracking-widest font-mono mb-2">GET IN TOUCH</h3>
+          <h2 class="text-3xl md:text-5xl font-black text-white leading-tight">شروع یک همکاری طلایی</h2>
+          <div class="w-12 h-1.5 bg-pitch-gold mx-auto mt-4"></div>
+          <p class="text-gray-300 mt-4 max-w-xl mx-auto text-sm leading-relaxed">
+            آماده دریافت پیشنهادات ترانسفر، بازی در رده‌های بالاتر کشوری و همکاری با آژانس‌ها و باشگاه‌های تراز اول کشور. امنیت چارچوب خود را به ما بسپارید.
+          </p>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-12 text-right max-w-2xl mx-auto">
+            
+            <div class="bg-pitch-card border border-pitch-line rounded-md p-5 flex items-center gap-4 transition-all duration-300 hover:border-pitch-gold/30">
+              <div class="w-12 h-12 rounded-md bg-pitch-gold/10 flex items-center justify-center text-pitch-gold">
+                <i data-lucide="phone" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <span class="text-[10px] text-gray-400 block">تلفن تماس (مدیر برنامه‌ها)</span>
+                <span class="text-base font-bold text-white font-mono leading-none" dir="ltr">+98 915 123 4567</span>
+              </div>
+            </div>
+
+            <div class="bg-pitch-card border border-pitch-line rounded-md p-5 flex items-center gap-4 transition-all duration-300 hover:border-pitch-gold/30">
+              <div class="w-12 h-12 rounded-md bg-pitch-gold/10 flex items-center justify-center text-pitch-gold">
+                <i data-lucide="mail" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <span class="text-[10px] text-gray-400 block">ایمیل آدرس رسمی</span>
+                <span class="text-base font-bold text-white font-mono leading-none">mohammad@example.com</span>
+              </div>
+            </div>
+
+            <div class="bg-pitch-card border border-pitch-line rounded-md p-5 flex items-center gap-4 transition-all duration-300 hover:border-pitch-gold/30">
+              <div class="w-12 h-12 rounded-md bg-pitch-gold/10 flex items-center justify-center text-pitch-gold">
+                <i data-lucide="instagram" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <span class="text-[10px] text-gray-400 block">اینستاگرام رسمی</span>
+                <span class="text-base font-bold text-white font-mono leading-none">@mohammad_hormozi1</span>
+              </div>
+            </div>
+
+            <div class="bg-pitch-card border border-pitch-line rounded-md p-5 flex items-center gap-4 transition-all duration-300 hover:border-pitch-gold/30">
+              <div class="w-12 h-12 rounded-md bg-pitch-gold/10 flex items-center justify-center text-pitch-gold">
+                <i data-lucide="shield" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <span class="text-[10px] text-gray-400 block">باشگاه فعلی</span>
+                <span class="text-base font-bold text-white">شاهین زاهدان (لیگ ۳ کشور)</span>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+    </main>
+
+    <!-- FOOTER WITH THE GOALPOSTS & GOAL CELEBRATION EFFECT -->
+    <footer class="bg-pitch-darker border-t border-pitch-line relative pt-16 pb-12 overflow-hidden">
+      <!-- Pitch line borders -->
+      <div class="absolute top-0 left-4 right-4 h-[1px] bg-pitch-line"></div>
+
+      <div class="max-w-6xl mx-auto px-4 md:px-8 flex flex-col items-center">
+        
+        <!-- THE 3D SOCCER GOAL -->
+        <div class="w-full max-w-md md:max-w-lg mb-12">
+          <h4 class="text-center text-xs text-gray-400 font-bold mb-4">با اسکرول کردن به انتهای صفحه، شوت سنگین را وارد دروازه کنید!</h4>
+          
+          <div class="relative w-full aspect-[400/220] flex items-end justify-center">
+            <svg id="soccer-goal" viewBox="0 0 400 200" class="w-full h-full" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <!-- Netting pattern -->
+                <pattern id="net-mesh" width="8" height="8" patternUnits="userSpaceOnUse">
+                  <path d="M 8 0 L 0 8 M 0 0 L 8 8" stroke="rgba(255, 255, 255, 0.22)" stroke-width="0.75"/>
+                </pattern>
+                
+                <!-- Glowing effect -->
+                <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+                  <feGaussianBlur stdDeviation="3" result="blur" />
+                  <feComposite in="SourceGraphic" in2="blur" operator="over" />
+                </filter>
+              </defs>
+
+              <!-- Grass base Inside Goal (Forest Green) -->
+              <rect x="15" y="175" width="370" height="20" fill="#1b4332" />
+              
+              <!-- Back Netting (Deep net polygon) -->
+              <polygon points="50,40 350,40 375,175 25,175" fill="url(#net-mesh)" stroke="rgba(255, 255, 255, 0.3)" stroke-width="1.5" id="goal-net" class="origin-top" />
+              
+              <!-- Left side net depth -->
+              <polygon points="25,175 50,40 10,175" fill="url(#net-mesh)" stroke="rgba(255, 255, 255, 0.2)" stroke-width="1" />
+              <!-- Right side net depth -->
+              <polygon points="375,175 350,40 390,175" fill="url(#net-mesh)" stroke="rgba(255, 255, 255, 0.2)" stroke-width="1" />
+              
+              <!-- Left Post shadow -->
+              <rect x="42" y="40" width="8" height="135" fill="rgba(0,0,0,0.4)" />
+              <rect x="350" y="40" width="8" height="135" fill="rgba(0,0,0,0.4)" />
+              
+              <!-- Goal Posts (White tubes) -->
+              <!-- Left Post -->
+              <rect x="45" y="40" width="10" height="135" fill="#ffffff" rx="2" stroke="#e2e8f0" stroke-width="1" />
+              <!-- Right Post -->
+              <rect x="345" y="40" width="10" height="135" fill="#ffffff" rx="2" stroke="#e2e8f0" stroke-width="1" />
+              <!-- Crossbar -->
+              <rect x="45" y="35" width="310" height="10" fill="#ffffff" rx="2" stroke="#e2e8f0" stroke-width="1" />
+              
+              <!-- Goal Line -->
+              <line x1="30" y1="175" x2="370" y2="175" stroke="#ffffff" stroke-width="3" stroke-linecap="round" />
+            </svg>
+            
+            <!-- Virtual landing zone marker inside goal (hidden) -->
+            <div id="goal-mouth" class="absolute bottom-[40px] left-[50%] w-2 h-2 -translate-x-1/2 opacity-0"></div>
+
+            <!-- GOAL SUCCESS OVERLAY DIRECTLY INSIDE THE GOAL -->
+            <div id="goal-success-overlay" class="absolute inset-0 bg-pitch-darker/90 backdrop-blur-md flex flex-col items-center justify-center opacity-0 pointer-events-none transition-all duration-500 z-30 rounded-md">
+              <div class="text-center p-6 scale-90 transition-transform duration-500" id="goal-success-banner">
+                <h3 class="text-4xl md:text-5xl font-black text-pitch-gold drop-shadow-[0_4px_12px_rgba(251,191,36,0.5)] tracking-wide mb-2">گل!</h3>
+                <p class="text-white text-sm md:text-base font-bold mb-5">توپ با موفقیت وارد دروازه شد! ⚽🔥</p>
+                <button onclick="scrollToTop()" class="bg-pitch-gold hover:bg-amber-500 text-pitch-darker font-black px-5 py-2.5 rounded-md text-xs transition-all duration-300 hover:scale-105 active:scale-95 shadow-[0_4px_14px_rgba(251,191,36,0.4)] cursor-pointer">
+                  برگشت به اول صفحه
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Links & Info -->
+        <div class="w-full flex flex-col md:flex-row justify-between items-center border-t border-pitch-line pt-8 gap-4 text-center md:text-right">
+          <div class="flex items-center gap-3">
+            <div class="w-8 h-8 rounded-md bg-pitch-gold/10 flex items-center justify-center text-pitch-gold border border-pitch-gold/20">
+              <i data-lucide="shield" class="w-4 h-4"></i>
+            </div>
+            <div>
+              <p class="font-bold text-sm text-white">محمد هرمزی</p>
+              <p class="text-[10px] text-gray-500 font-mono">Durable defensive wall in the cage.</p>
+            </div>
+          </div>
+          
+          <p class="text-xs text-gray-500 font-mono">
+            &copy; 2026 Mohammad Hormozi. All rights reserved. <br class="md:hidden" /> Designed with ⚽ and vanilla web techs.
+          </p>
+        </div>
+
+      </div>
+    </footer>
+
+
+    <!-- LIGHTBOX MODAL CONTAINER -->
+    <div id="lightbox" class="fixed inset-0 bg-black/95 z-50 flex items-center justify-center opacity-0 pointer-events-none transition-opacity duration-300">
+      <!-- Close button -->
+      <button class="absolute top-6 right-6 text-white hover:text-pitch-gold transition-colors p-2 rounded-md bg-white/5 z-50" onclick="closeLightbox()">
+        <i data-lucide="x" class="w-6 h-6"></i>
+      </button>
+
+      <!-- Lightbox content -->
+      <div class="relative max-w-5xl max-h-[85vh] w-full px-6 flex items-center justify-center">
+        <!-- Prev button -->
+        <button class="absolute left-4 md:left-8 text-white hover:text-pitch-gold transition-colors p-3 rounded-md bg-white/5 hover:bg-white/10" onclick="navigateLightbox(-1)">
+          <i data-lucide="chevron-left" class="w-6 h-6"></i>
+        </button>
+
+        <!-- Dynamic Lightbox Target Image -->
+        <div class="relative rounded-md overflow-hidden img-placeholder max-h-[75vh] max-w-full flex items-center justify-center bg-pitch-dark border border-white/10 shadow-2xl">
+          <img id="lightbox-img" src="" alt="بزرگنمایی" class="max-h-[75vh] max-w-full object-contain relative z-10 transition-all duration-300" />
+          <div class="absolute inset-0 flex flex-col items-center justify-center p-6 text-center z-0">
+            <div class="w-16 h-16 rounded-md bg-pitch-gold/10 border border-pitch-gold/30 flex items-center justify-center text-pitch-gold mb-4">
+              <i data-lucide="image" class="w-8 h-8"></i>
+            </div>
+            <h4 class="font-bold text-lg text-white" id="lightbox-placeholder-title">بارگذاری تصویر</h4>
+            <code class="text-xs font-mono text-pitch-gold mt-2 bg-pitch-darker/60 px-2 py-1 rounded" id="lightbox-placeholder-code">photo8.jpg</code>
+          </div>
+        </div>
+
+        <!-- Next button -->
+        <button class="absolute right-4 md:right-8 text-white hover:text-pitch-gold transition-colors p-3 rounded-md bg-white/5 hover:bg-white/10" onclick="navigateLightbox(1)">
+          <!-- Since RTL, we rotate chevron left for right navigation or let it be standard chevron-right -->
+          <i data-lucide="chevron-right" class="w-6 h-6"></i>
+        </button>
+
+        <!-- Caption info bottom -->
+        <div class="absolute bottom-[-45px] text-center text-white text-sm">
+          <p id="lightbox-caption" class="font-bold"></p>
+          <span id="lightbox-index" class="text-xs text-gray-500 font-mono mt-0.5 block"></span>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Link to external script.js -->
+    <script src="script.js" defer></script>
+  </body>
+</html>

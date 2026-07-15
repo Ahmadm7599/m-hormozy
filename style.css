@@ -1,0 +1,104 @@
+/* style.css */
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;700;900&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+/* Apply custom fonts */
+body {
+  font-family: 'Vazirmatn', sans-serif;
+}
+
+.font-mono {
+  font-family: 'Space Grotesk', monospace;
+}
+
+/* Custom Soccer Net Background */
+.net-bg {
+  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.05) 25%, transparent 25%), 
+                    linear-gradient(-45deg, rgba(255, 255, 255, 0.05) 25%, transparent 25%), 
+                    linear-gradient(45deg, transparent 75%, rgba(255, 255, 255, 0.05) 75%), 
+                    linear-gradient(-45deg, transparent 75%, rgba(255, 255, 255, 0.05) 75%);
+  background-size: 24px 24px;
+  background-position: 0 0, 0 12px, 12px -12px, -12px 0px;
+}
+
+/* Geometric Grid Background Pattern */
+.pitch-grid {
+  background-size: 40px 40px;
+  background-image: linear-gradient(to right, rgba(251, 191, 36, 0.025) 1px, transparent 1px),
+                    linear-gradient(to bottom, rgba(251, 191, 36, 0.025) 1px, transparent 1px);
+}
+
+/* Styled Placeholder for Images (Before the user replaces them) */
+.img-placeholder {
+  background: radial-gradient(circle, #1b4332 0%, #05130e 100%);
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(251, 191, 36, 0.08);
+  box-shadow: inset 0 0 40px rgba(0,0,0,0.9);
+}
+
+.img-placeholder::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.01) 1px, transparent 1px),
+                    linear-gradient(90deg, rgba(255, 255, 255, 0.01) 1px, transparent 1px);
+  background-size: 16px 16px;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.img-placeholder::after {
+  content: '⚽';
+  position: absolute;
+  font-size: 4rem;
+  opacity: 0.03;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* Custom Tactical Dash Outline */
+.tactical-border {
+  position: relative;
+}
+
+/* Keyframe Net shaking animation when goal scored */
+@keyframes netShake {
+  0% { transform: translate(0, 0) scale(1); }
+  15% { transform: translate(-8px, 6px) scale(1.03); }
+  30% { transform: translate(8px, -6px) scale(0.97); }
+  45% { transform: translate(-6px, -3px) scale(1.02); }
+  60% { transform: translate(6px, 3px) scale(0.98); }
+  75% { transform: translate(-3px, 3px) scale(1.01); }
+  90% { transform: translate(3px, -2px) scale(0.99); }
+  100% { transform: translate(0, 0) scale(1); }
+}
+
+.net-shake {
+  animation: netShake 0.8s cubic-bezier(.36,.07,.19,.97) both;
+}
+
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Scrollbar styling - customized for Geometric Balance */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #040f0a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #fbbf24;
+  border: 2px solid #040f0a;
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #f59e0b;
+}
